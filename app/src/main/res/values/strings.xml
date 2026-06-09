@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Family Balance</string>
+    <string name="login_q">Your role is?</string>
+    <string name="login_m">Credit</string>
+    <string name="login_d">Debit</string>
+    <string name="btn_view_more"><![CDATA[< view more >]]></string>
+    <string name="add_title">Add Record</string>
+    <string name="add_hint_title">Title</string>
+    <string name="add_hint_date">Date</string>
+    <string name="add_hint_details">Details (Optional)</string>
+    <string name="add_hint_amount">Amount ($)</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save">Save</string>
+    <string name="main_err">Data Error</string>
+    <string name="msg_oldest_data">Oldest records reached</string>
+    <string name="msg_no_older_data">No older records found</string>
+    <string name="add_reload">Reload</string>
+    <string name="main_view_record">Record Details</string>
+    <string name="msg_deleted">Deleted successfully</string>
+    <string name="main_err_empty">Please fill out required fields</string>
+    <string name="main_err_positive">Enter a valid positive number</string>
+    <string name="msg_saved">Saved successfully</string>
+    <string name="del_title">Delete Record</string>
+    <string name="del_body">Are you sure you want to permanently delete this entry?</string>
+    <string name="main_err_db">Database Error</string>
+    <string name="btn_ok">OK</string>
+    <string name="main_summary">Summary</string>
+    <string name="main_limit_tips">View up to 10 entries at once. Click \"view more\" for more.</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="m_body">28sp</dimen>
+    <dimen name="m_semi_title">32sp</dimen>
+    <dimen name="m_title">32sp</dimen>
+</resources>

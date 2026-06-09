@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.FamilyBalance" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="textAppearanceBody1">@style/DaughterBodyText</item>
+        <item name="textAppearanceSubtitle1">@style/DaughterSemiTitleText</item>
+        <item name="textAppearanceHeadline6">@style/DaughterTitleText</item>
+    </style>
+
+    <style name="Theme.FamilyBalance.Mom" parent="Theme.FamilyBalance">
+        <item name="textAppearanceBody1">@style/MomBodyText</item>
+        <item name="textAppearanceSubtitle1">@style/MomSemiTitleText</item>
+        <item name="textAppearanceHeadline6">@style/MomTitleText</item>
+    </style>
+</resources>

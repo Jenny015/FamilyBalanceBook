@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="MomBodyText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/m_body</item>
+    </style>
+
+    <style name="MomSemiTitleText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/m_semi_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MomTitleText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/m_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="DaughterBodyText" parent="TextAppearance.MaterialComponents.Body1" />
+    <style name="DaughterSemiTitleText" parent="TextAppearance.MaterialComponents.Subtitle1" />
+    <style name="DaughterTitleText" parent="TextAppearance.MaterialComponents.Headline6" />
+
+</resources>

@@ -27,4 +27,5 @@
     <string name="btn_ok">OK</string>
     <string name="main_summary">Summary</string>
     <string name="main_limit_tips">View up to 10 entries at once. Click \"view more\" for more.</string>
+    <string name="add_select_date">Select Entry Date</string>
 </resources>

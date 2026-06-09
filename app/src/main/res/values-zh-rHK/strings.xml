@@ -28,4 +28,5 @@
     <string name="btn_ok">確定</string>
     <string name="main_summary">總結</string>
     <string name="main_limit_tips">一次最多顯示 10 條記錄。點擊＂查看更多＂按鈕顯示更多記錄。</string>
+    <string name="add_select_date">選擇日期</string>
 </resources>

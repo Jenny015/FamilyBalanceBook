@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.FamilyBalance" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.FamilyBalance" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="textAppearanceBody1">@style/DaughterBodyText</item>
         <item name="textAppearanceSubtitle1">@style/DaughterSemiTitleText</item>
         <item name="textAppearanceHeadline6">@style/DaughterTitleText</item>

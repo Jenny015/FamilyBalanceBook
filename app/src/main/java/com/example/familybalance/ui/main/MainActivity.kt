@@ -21,6 +21,7 @@ import com.example.familybalance.data.repository.FirebaseRepository
 import com.example.familybalance.ui.adapter.EntryAdapter
 import com.example.familybalance.utils.PreferencesManager
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import java.text.SimpleDateFormat
@@ -189,6 +190,17 @@ class MainActivity : AppCompatActivity() {
         val tilTitle = view.findViewById<TextInputLayout>(R.id.til_title)
         val etTitle = view.findViewById<TextInputEditText>(R.id.et_title)
         val etDate = view.findViewById<TextInputEditText>(R.id.et_date)
+        val datePicker = MaterialDatePicker.Builder.datePicker()
+            .setTitleText(getString(R.string.add_select_date))
+            .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
+            .build()
+        etDate.setOnClickListener {
+            datePicker.show(supportFragmentManager, "DATE_PICKER")
+        }
+        datePicker.addOnPositiveButtonClickListener { selection ->
+            val formatter = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
+            etDate.setText(formatter.format(java.util.Date(selection)))
+        }
         val tilDetail = view.findViewById<TextInputLayout>(R.id.til_detail)
         val etDetail = view.findViewById<TextInputEditText>(R.id.et_detail)
         val etAmount = view.findViewById<TextInputEditText>(R.id.et_amount)

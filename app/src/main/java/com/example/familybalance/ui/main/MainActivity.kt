@@ -6,10 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
+import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familybalance.R
@@ -31,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var prefs: PreferencesManager
     private lateinit var adapter: EntryAdapter
 
+    private lateinit var rootLayout: RelativeLayout
     private lateinit var btnViewMore: Button
     private lateinit var tvEntryCounter: TextView
     private lateinit var rvEntries: RecyclerView
@@ -51,7 +55,21 @@ class MainActivity : AppCompatActivity() {
             setTheme(R.style.Theme_FamilyBalance)
         }
 
+
         setContentView(R.layout.activity_main)
+
+        val rootLayout = findViewById<RelativeLayout>(R.id.main_root_layout)
+
+        ViewCompat.setOnApplyWindowInsetsListener(rootLayout){view, windowInsets ->
+            val systemBars = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            view.setPadding(
+                systemBars.left,
+                systemBars.top,
+                systemBars.right,
+                systemBars.bottom
+            )
+            windowInsets
+        }
 
         // Initialize Tools and Identity
         repository = FirebaseRepository()

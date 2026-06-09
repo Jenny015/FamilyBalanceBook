@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">家計簿</string>
+    <string name="login_q">你的身份是?</string>
+    <string name="login_m">儲值</string>
+    <string name="login_d">消費</string>
+    <string name="btn_view_more"><![CDATA[< 查看更多 >]]></string>
+    <string name="add_title">新增記錄</string>
+    <string name="add_hint_title">標題</string>
+    <string name="add_hint_date">日期</string>
+    <string name="add_hint_details">詳情</string>
+    <string name="add_hint_amount">金額</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_save">儲存</string>
+    <string name="main_err">資料錯誤</string>
+    <string name="msg_oldest_data">已到達最舊記錄</string>
+    <string name="msg_no_older_data">沒有找到舊記錄</string>
+    <string name="add_reload">增值</string>
+    <string name="main_view_record">記錄詳情</string>
+    <string name="msg_deleted">已成功刪除</string>
+    <string name="main_err_empty">請填寫所有欄位</string>
+    <string name="main_err_positive">請輸入正數金額</string>
+    <string name="msg_saved">成功儲存</string>
+    <string name="del_title">刪除記錄</string>
+    <string name="del_body">你確定要永久刪除這筆記錄嗎？</string>
+    <string name="main_err_db">資料庫錯誤</string>
+    <string name="btn_ok">確定</string>
+    <string name="main_summary">總結</string>
+    <string name="main_limit_tips">一次最多顯示 10 條記錄。點擊＂查看更多＂按鈕顯示更多記錄。</string>
+</resources>
